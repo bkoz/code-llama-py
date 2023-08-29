@@ -58,8 +58,7 @@ def generate(
         top_p=top_p,
         repetition_penalty=repetition_penalty,
         do_sample=True,
-        seed=42,
-        max_length=500
+        seed=42
     )
 
     if FIM_INDICATOR in prompt:
