@@ -43,7 +43,7 @@ client = Client(
 
 
 def generate(
-    prompt, temperature=0.9, max_new_tokens=256, max_length=500, top_p=0.95, repetition_penalty=1.0,
+    prompt, temperature=0.9, max_new_tokens=256, top_p=0.95, repetition_penalty=1.0,
 ):
 
     temperature = float(temperature)
@@ -58,7 +58,8 @@ def generate(
         top_p=top_p,
         repetition_penalty=repetition_penalty,
         do_sample=True,
-        seed=42
+        seed=42,
+        max_length=500
     )
 
     if FIM_INDICATOR in prompt:
