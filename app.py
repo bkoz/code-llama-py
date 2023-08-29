@@ -200,5 +200,5 @@ with gr.Blocks(theme=theme, analytics_enabled=False, css=css) as demo:
         inputs=[instruction, temperature, max_new_tokens, top_p, repetition_penalty],
         outputs=[output],
     )
-demo.queue(concurrency_count=16).launch(debug=True, server_port=8080)
+demo.queue(concurrency_count=16).launch(debug=True, server_name='0.0.0.0', server_port=8080)
 
