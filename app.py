@@ -97,7 +97,7 @@ def generate(
 
 examples = [
     "X_train, y_train, X_test, y_test = train_test_split(X, y, test_size=0.1)\n\n# Train a logistic regression model, predict the labels on the test set and compute the accuracy score",
-    "def primes(n: int) -> list(int):",
+    "def is_prime(n: int) -> bool:",
     "Poor English: She no went to the market. Corrected English:",
     "class Circle():\n \"\"\" <FILL_ME>",
     "def towers_of_hanoi():",
